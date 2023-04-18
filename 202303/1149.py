@@ -17,21 +17,11 @@ def sol(lst):
         second_min_index = 2
 
     return min_index, second_min_index
-a, b = 3, 3
-ans = [0, 0]
+
+ans = [0, 0, 0]
 for i in range(N):
     A = sol(T[i])
-    if A[0] != a:
-        if A[1] != a:
-            ans = [ans[0]+T[i][A[0]], ans[0]+T[i][A[1]]]
-        else:
-            ans = [ans[0]+T[i][A[0]], ans[1]+T[i][A[1]]]
-    else:
-        if A[1] != a:
-            ans = [ans[1]+T[i][A[0]], ans[0]+T[i][A[1]]]
-        else:
-            ans = [ans[1]+T[i][A[0]], ans[1]+T[i][A[1]]]
-    a = A[0]
-    b = A[1]
+    
+
     print(ans)
 print(min(ans))
