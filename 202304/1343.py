@@ -2,6 +2,8 @@ A = input()
 
 B = A.split('.')
 
+print(B)
+
 ans = ''
 
 for item in B:
